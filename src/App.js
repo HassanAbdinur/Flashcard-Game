@@ -19,7 +19,9 @@ class App extends React.Component {
       <div>
       <h1>{this.state.num1} + {this.state.num2}</h1> 
        <input onChange={this.updateResponse} value={this.state.response } />
-       Current guess is {this.state.response}
+       <div>
+         Score: {this.state.score}
+       </div>
       </div>
     );
   }
