@@ -53,7 +53,8 @@ class App extends React.Component {
             score: State.score + 1,
             num1: Math.ceil(Math.random() * 10),
             num2: Math.ceil(Math.random() * 10),
-            response: ""
+            response: "",
+            incorrect: false
           }));
       } else {
         //Answer is wrong
