@@ -25,15 +25,17 @@ class App extends React.Component {
 
   renderProblem() {
     return(
-      <div>
+      <div className="container">
+      <div className="section">
       <h1 className={this.state.incorrect ? "incorrect" : ""}>{this.state.num1} + {this.state.num2}</h1> 
        <input onKeyPress={this.inputKeyPress} onChange={this.updateResponse} value={this.state.response } />
-       <div>
+       <div className="score-board">
          Score: {this.state.score}
        </div>
       </div>
-    );
-  }
+    </div>
+  );
+}
 
   renderWin() {
     alert("Congratulations you win!");
