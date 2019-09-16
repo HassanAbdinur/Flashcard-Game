@@ -44,6 +44,9 @@ class App extends React.Component {
           }));
       } else {
         //Answer is wrong
+        this.setState({
+          response: " "
+        })
       }
     }
   }
