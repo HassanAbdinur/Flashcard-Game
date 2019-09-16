@@ -18,7 +18,7 @@ class App extends React.Component {
     return(
       <div>
       <h1>{this.state.num1} + {this.state.num2}</h1> 
-       <input onChange={this.updateResponse} value={this.state.response } />
+       <input onKeyPress={this.inputKeyPress} onChange={this.updateResponse} value={this.state.response } />
        <div>
          Score: {this.state.score}
        </div>
@@ -30,6 +30,9 @@ class App extends React.Component {
     this.setState({
       response: event.target.value
     });
+  }
+  inputKeyPress = (event) => {
+    this.setState({})
   }
 }
 
