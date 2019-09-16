@@ -33,7 +33,12 @@ class App extends React.Component {
   }
   inputKeyPress = (event) => {
     if (event.key === "Enter") {
-      const answer = parseInt(this.state.response);
+      const answer = parseInt(this.state.response); 
+      if (answer === this.state.num1 + this.state.num2) {
+          // Answer is right
+      } else {
+        //Answer is wrong
+      }
     }
   }
 }
