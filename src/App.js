@@ -13,6 +13,14 @@ class App extends React.Component {
     }
   }
 
+  render() {
+    if (this.state.score >= 10) {
+      return renderWin();
+    } else {
+      return renderProblem();
+    }
+  }
+
 
   renderProblem() {
     return(
