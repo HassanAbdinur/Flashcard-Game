@@ -16,7 +16,7 @@ class App extends React.Component {
 
   render() {
     return(
-      <div>
+      <div className="flashCard">
       <h1>{this.state.num1} + {this.state.num2}</h1> 
        <input onKeyPress={this.inputKeyPress} onChange={this.updateResponse} value={this.state.response } />
        <div>
@@ -37,8 +37,10 @@ class App extends React.Component {
       if (answer === this.state.num1 + this.state.num2) {
           // Answer is right
           this.setState( State => ({
-            score: state.score + 1,
-            num1: Math.random() * 10
+            score: State.score + 1,
+            num1: Math.ceil(Math.random() * 10),
+            num2: Math.ceil(Math.random() * 10),
+            response: ""
           }));
       } else {
         //Answer is wrong
