@@ -37,7 +37,7 @@ class App extends React.Component {
       if (answer === this.state.num1 + this.state.num2) {
           // Answer is right
           this.setState( State => ({
-            score: state.score + 1
+            score: state.score + 1,
             num1: Math.random() * 10
           }));
       } else {
