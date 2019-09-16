@@ -25,8 +25,8 @@ class App extends React.Component {
 
   renderProblem() {
     return(
-      <div className="flashCard">
-      <h1>{this.state.num1} + {this.state.num2}</h1> 
+      <div>
+      <h1 className={this.state.incorrect ? "incorrect" : ""}>{this.state.num1} + {this.state.num2}</h1> 
        <input onKeyPress={this.inputKeyPress} onChange={this.updateResponse} value={this.state.response } />
        <div>
          Score: {this.state.score}
@@ -58,7 +58,8 @@ class App extends React.Component {
       } else {
         //Answer is wrong
         this.setState({
-          response: ""
+          response: "",
+          incorrect: true 
         })
       }
     }
