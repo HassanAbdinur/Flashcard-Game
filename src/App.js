@@ -15,9 +15,9 @@ class App extends React.Component {
 
   render() {
     if (this.state.score >= 10) {
-      return renderWin();
+      return this.renderWin();
     } else {
-      return renderProblem();
+      return this.renderProblem();
     }
   }
 
