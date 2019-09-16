@@ -14,7 +14,7 @@ class App extends React.Component {
   }
 
 
-  render() {
+  renderProblem() {
     return(
       <div className="flashCard">
       <h1>{this.state.num1} + {this.state.num2}</h1> 
@@ -24,6 +24,10 @@ class App extends React.Component {
        </div>
       </div>
     );
+  }
+
+  renderWin() {
+    alert("Congratulations you win!");
   }
 
   updateResponse = (event) => {
