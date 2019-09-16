@@ -2,7 +2,6 @@
   text-align: center;
 }
 
-.flashCard {
-  justify-content: center;
-  align-items: center;  
+.incorrect {
+  color: red;
 }
