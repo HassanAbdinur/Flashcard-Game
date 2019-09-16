@@ -9,7 +9,8 @@ class App extends React.Component {
         num1: 1,
         num2: 1,
         score: 0,
-        response: ""
+        response: "",
+        incorrect: false
     }
   }
 
