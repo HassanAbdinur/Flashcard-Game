@@ -32,7 +32,9 @@ class App extends React.Component {
     });
   }
   inputKeyPress = (event) => {
-    this.setState({})
+    if (event.key === "Enter") {
+      
+    }
   }
 }
 
